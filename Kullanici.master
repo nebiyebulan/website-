@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Kullanici.master.cs" Inherits="Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 23px;
+        }
+
+        .auto-style2 {
+            font-weight: normal;
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            font-size: small;
+        }
+
+        .auto-style3 {
+            color: #000000;
+        }
+
+        .auto-style4 {
+            background-color: #FFCCCC;
+        }
+
+        .auto-style5 {
+            background-color: #FFCCCC;
+            text-align: center;
+        }
+
+        .auto-style6 {
+            background-color: #FFCCCC;
+            float: left;
+            width: 461px;
+            height: 370px;
+        }
+        .auto-style7 {
+            color: #666666;
+            font-size: medium;
+        }
+        .auto-style13 {
+            font-weight: normal;
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            width: 150px;
+        }
+        .auto-style14 {
+            font-weight: normal;
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            width: 151px;
+        }
+        .auto-style15 {
+            font-weight: normal;
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            width: 141px;
+        }
+        .auto-style17 {
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            width: 150px;
+            font-size: medium;
+        }
+        .auto-style18 {
+            width: 879px;
+            height: 40px;
+        }
+        .auto-style20 {
+            font-weight: normal;
+            text-align: center;
+            background-color: #40ffd0;
+            height: 33px;
+            width: 150px;
+            font-size: small;
+        }
+        .auto-style21 {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 879px; height: 150px; margin-left: 180px;" class="auto-style4">
+            <asp:Image ID="Image1" runat="server" Height="149px" ImageUrl="~/resimler/shutterstock_364732025_16_9_1545137291-880x495.jpg" Width="879px" />
+        </div>
+        <div style="margin-left: 180px; width: 879px; height: 30px;">&nbsp;</div>
+        <div style="margin-left: 180px; background-color: #fff;" class="auto-style18">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style17"><a href="AnaSayfa.aspx" class="auto-style21"><span class="auto-style3"><strong>ANASAYFA</strong></span></a></td>
+                    <td class="auto-style20"><a href="Gununhaberi.aspx" class="auto-style21"><span class="auto-style3"><strong>GÜNÜN HABERİ</strong></span></a></td>
+                    <td class="auto-style14"><a href="bilgipaylas.aspx" class="auto-style21"><span class="auto-style3"><strong>BİLGİ PAYLAŞ</strong></span></a></td>
+                    <td class="auto-style13"><a href="Hakkimizda.aspx" class="auto-style21"><span class="auto-style3"><strong>HAKKIMIZDA</strong></span></a></td>
+                    <td class="auto-style15"><a href="iletisim.aspx" class="auto-style21"><span class="auto-style3"><strong>İLETİŞİM</strong></span></a></td>
+                    <td class="auto-style2"><a href="HayvanBarinaklari.aspx" class="auto-style21"><span class="auto-style3"> <strong>HAYVAN BARINAKLARI</strong></span></a></td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-left: 180px; width: 879px; height: 20px;">&nbsp;</div>
+        <div style="margin-left: 180px; width: 879px; height: 370px;">
+
+            <div style="margin-left: 0px; float: left; width: 225px; height: auto;" class="auto-style5">
+                <asp:DataList ID="DataList1" runat="server" Width="222px">
+                    <ItemTemplate>
+                        <div style="border: thin solid #D1D3D2">
+                            <a href="KategoriDetay.aspx?Kategoriid=<%#Eval("Kategoriid") %>">
+                                <strong>
+                            <asp:Label ID="Label1" runat="server" BorderStyle="None" CssClass="auto-style7" Text='<%#Eval("KategoriAd") %>'></asp:Label>
+                            </strong>
+                            </a>
+                        </div>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="margin-left: 185px; height: auto;" class="auto-style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

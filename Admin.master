@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style4 {
+            background-color: #FFCCCC;
+        }
+
+        .auto-style5 {
+            background-color: #99FFCC;
+            text-align: center;
+        }
+
+        .auto-style6 {
+            background-color: #99FFCC;
+            float: left;
+            width: 461px;
+            height: 370px;
+        }
+        .auto-style7 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 879px; height: 150px; margin-left: 180px;" class="auto-style4">
+            <asp:Image ID="Image1" runat="server" Height="149px" ImageUrl="~/Banner/123.jpg" Width="879px" />
+        </div>
+        <div style="margin-left: 180px; width: 879px; height: 30px;">&nbsp;</div>
+       
+        <div style="margin-left: 180px; width: 879px; height: 370px;">
+
+            <div style="margin-left: 0px; float: left; width: 225px; height: auto;" class="auto-style5">
+                <table class="auto-style7">
+                    <tr>
+                        <td><strong>MENÜLER</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="kategoriler.aspx">Kategoriler</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="Hayvanlar.aspx"> Hayvanlar</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="Yorumlar.aspx"> Yorumlar</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="Mesajlar.aspx"> Mesajlar</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="GununHaberiAdmin.aspx"> Günün Haberi</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="PaylasılanBilgiler.aspx"> Paylaşılan Bilgiler</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #FFFFFF"><a href="HakkimizdaAdmin.aspx"> Hakkımızda</a></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-left: 185px; height: auto;" class="auto-style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
