@@ -1,2 +1,2 @@
 # website-
-sql veritabanlı bir evcil hayvan web sitesidir.
+It is a .Net website based on sql data. Forms, admin and user interfaces are used in it.
